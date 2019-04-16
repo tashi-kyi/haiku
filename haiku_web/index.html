@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>projet-tashikyi</title>
+    <link rel="stylesheet" href="projet.css">
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400" rel="stylesheet">
+</head>
+<body>
+    <div class="homepage"><a href="haiku-1.html"><img src="images/Intersect.png" alt="logo de haiku"><p>haiku</p></a></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <button class="dropbtn_haiku"><a href="#">haiku</a></button>
+        <div class="def_haiku"><p>Le haïku est un art qui sous la forme d'un poème bref observe la nature et l'esprit humain et montre que tout est passager.<br> Ecrire un haïku est une sorte de méditation, de concentration sur son environnement et son état d'esprit.<br> Un haïku est une peinture, un son, un parfum, une atmosphère, un souvenir lointain aussi bien qu'un fait précis. Tout doit être dit en trois vers, en peu de mots.</p></div>
+
+        <button class="dropbtn-promenade" ><a href="#">promenade</a></button>
+        <div class="dropdown-promenade-list">
+            <a href="haiku-1.html">.une nuit de lune</a>
+            <a href="haiku-2.html">.un arbre sans feuilles</a>
+            <a href="haiku-3.html">.feu vert, feu rouge</a>
+        </div>
+
+        <button class="dropbtn-contact"><a href="#">contact</a></button>
+        <div class="dropdown-contact">
+            <p>tashikyitaki@gmail.com<br>reference_ simplon.co<br></p>
+        </div>
+        
+        <a href="index.html">                
+            <img src="images/Intersect.png" alt="image de logo">
+            <p class="menu-logo-text">haiku</p>
+        </a>
+    </div>
+    <!--To open the side navigation-->
+    <span style="font-size:30px;cursor:pointer;margin-left:20px;" onclick="openNav()">&#9776;</span>        
+    <script src="projet.js"></script>
+    <script>document.onkeydown = arrowChecker;
+
+        function arrowChecker(e) {  
+            e = e || window.event;
+            if (e.keyCode == '37') { //left
+                document.location.href = "";
+            }
+            else if (e.keyCode == '39') { //right
+                document.location.href = "haiku-1.html";
+            }
+        }
+    </script>
+</body>
+</html>

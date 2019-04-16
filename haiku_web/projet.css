@@ -1,0 +1,179 @@
+body, .dropbtn-contact,.dropbtn_haiku, .dropbtn-promenade{
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 46px;
+    font-size: 20px;
+    letter-spacing: 0.25em;
+}
+/*homage*/
+.homepage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+}
+.homepage p{
+    text-transform: uppercase;
+    letter-spacing: 1.70em;
+    color: black;
+    margin-top:15px;
+}
+.homepage a{
+    text-decoration: none;
+}/*homepage*/
+
+
+/*les éléments des pages 1,2,3*/
+.contenu-text-haiku{/*text haiku in dive*/
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-45%);
+    background: (0,0,0,0,0)
+
+}
+.hover-ici{
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 18px;
+  }
+  
+.hover-ici img{
+    height: 30px;
+    width: 30px;
+}
+.overlay{
+visibility: hidden;
+opacity: 0;
+background: rgba(196, 196, 196, 0.2);
+margin-top: 10vh;
+margin-left: 20vh;
+width: 150vh;
+height: 70vh;
+transition: visibility 0.5s, opacity 0.5s linear;
+
+}
+ .overlay p{
+    text-align: right;
+    font-size: 10px;
+    line-height: 6px;
+    margin-right: 10px;
+ }
+.overlay img{
+height: 100%;
+}
+.submit-name{
+    float: right;  
+}
+.hover-ici:hover + .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+    /*menu déroulant*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+  }
+  
+  .sidenav a, .dropbtn-contact, .dropbtn_haiku, .dropbtn-promenade{
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #cecbcb;
+    display: block;
+  }
+ 
+.sidenav a:hover {
+    color: #b1afaf;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.menu-logo-text{
+    color: #818181;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-left: 39px;
+    padding-top: 287px;
+}
+.sidenav img{
+    height: 75px;
+    transform: translate(40px, 330px);
+}
+
+.dropbtn-promenade{
+    font-size: 15px;
+    color: #cecbcb;
+    display: block; 
+}
+
+    /*dropdown buttons*/
+.dropbtn-contact, .dropbtn_haiku, .dropbtn-promenade{
+    background-color: #111;
+    border: none;
+    margin-left: 0;
+}
+.dropdown-promenade-list{
+    display: none;
+    margin-left: 5px;
+    margin-top: -15px;
+    margin-bottom: 7px;
+}
+.dropdown-contact{
+    margin-left: 38px;
+    margin-top: -14px;
+    display: none;
+    position: absolute;
+}
+.dropdown-contact p, .dropdown-promenade-list a{
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: .11em;
+    color: rgb(145, 144, 144);
+    margin-top: 7px;
+}
+.def_haiku{
+    position: fixed;
+    visibility: none;
+    opacity: 0;
+    right: 5%;
+    width: 74%;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.9);
+    min-height: 100%;
+    transition: visibility 0.35s, opacity 0.35s linear;
+}
+.def_haiku p{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0,-50%);
+    text-align: right;
+    font-size: 15px;
+    line-height: 28px;
+}
+.dropbtn_haiku:hover +.def_haiku{
+    visibility: visible;
+    opacity: 1;
+}/*dropdown buttons*/
+
+*:focus {/*hides the undesired border colors on click buttons*/
+    outline: none;
+}
